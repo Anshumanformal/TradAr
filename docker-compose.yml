@@ -1,0 +1,10 @@
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: mysql_container
+    environment:
+      MYSQL_ROOT_USER: root
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: tradar_database     # The database name
+    ports:
+      - "3306:3306"  # Map port 3306 for MySQL
